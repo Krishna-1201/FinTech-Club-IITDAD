@@ -1,0 +1,75 @@
+/* Custom Colors */
+:root {
+    --navy-blue: #0B1B3A;
+    --gold: #FFD700;
+    --light-gold: #FFF9C4;
+}
+
+/* Typography */
+body {
+    font-family: 'Inter', 'Poppins', 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* Custom utility classes */
+.text-navy-blue {
+    color: var(--navy-blue);
+}
+
+.bg-navy-blue {
+    background-color: var(--navy-blue);
+}
+
+.text-gold {
+    color: var(--gold);
+}
+
+.bg-gold {
+    background-color: var(--gold);
+}
+
+.border-navy-blue {
+    border-color: var(--navy-blue);
+}
+
+.border-gold {
+    border-color: var(--gold);
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Custom animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fadeInUp {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+/* Hover effects */
+.hover-scale {
+    transition: transform 0.3s ease;
+}
+
+.hover-scale:hover {
+    transform: scale(1.05);
+}
+
+/* Custom shadows */
+.shadow-gold {
+    box-shadow: 0 10px 25px -3px rgba(255, 215, 0, 0.1), 0 4px 6px -2px rgba(255, 215, 0, 0.05);
+}
+
+.shadow-navy {
+    box-shadow: 0 10px 25px -3px rgba(11, 27, 58, 0.1), 0 4px 6px -2px rgba(11, 27, 58, 0.05);
+}
